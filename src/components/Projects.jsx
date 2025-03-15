@@ -1,0 +1,93 @@
+import React, { useState } from "react";
+import { Container, Row, Col, Button, Card } from "react-bootstrap";
+import "./Projects.css";
+
+const projectData = [
+  {
+    title: "Portfolio Website",
+    category: "Web Apps",
+    description: "A responsive portfolio website built with React and Bootstrap.",
+    image: "/images/portfolio.png", // Add images in the public/images folder
+    demoLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "AI Chatbot",
+    category: "AI/ML",
+    description: "A chatbot powered by NLP and machine learning algorithms.",
+    image: "/images/chatbot.png",
+    demoLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "VR Learning App",
+    category: "AR/VR",
+    description: "An immersive VR learning platform for students.",
+    image: "/images/vr-learning.png",
+    demoLink: "#",
+    githubLink: "#",
+  },
+  {
+    title: "Hackathon Project",
+    category: "Hackathon Projects",
+    description: "An innovative solution developed during a 24-hour hackathon.",
+    image: "/images/hackathon.png",
+    demoLink: "#",
+    githubLink: "#",
+  },
+];
+
+const categories = ["All", "Web Apps", "AI/ML", "AR/VR", "Hackathon Projects"];
+
+const Projects = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  const filteredProjects =
+    selectedCategory === "All"
+      ? projectData
+      : projectData.filter((project) => project.category === selectedCategory);
+
+  return (
+    <section className="projects-section" id="projects">
+      <Container>
+        <h2 className="projects-title">My Projects</h2>
+
+        <div className="filter-buttons">
+          {categories.map((category, index) => (
+            <Button
+              key={index}
+              className={`filter-btn ${selectedCategory === category ? "active" : ""}`}
+              onClick={() => setSelectedCategory(category)}
+            >
+              {category}
+            </Button>
+          ))}
+        </div>
+
+        <Row>
+          {filteredProjects.map((project, index) => (
+            <Col md={6} lg={4} key={index} className="project-card">
+              <Card>
+                <Card.Img variant="top" src={project.image} alt={project.title} />
+                <Card.Body>
+                  <Card.Title>{project.title}</Card.Title>
+                  <Card.Text>{project.description}</Card.Text>
+                  <div className="project-links">
+                    <Button variant="primary" href={project.demoLink} target="_blank">
+                      Live Demo
+                    </Button>
+                    <Button variant="dark" href={project.githubLink} target="_blank">
+                      GitHub
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </section>
+  );
+};
+
+export default Projects;

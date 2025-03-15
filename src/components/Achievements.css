@@ -1,0 +1,33 @@
+.achievements-section {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+  }
+  
+  .achievements-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #10439F;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .achievement-card {
+    margin-bottom: 30px;
+  }
+  
+  .achievement-item {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .achievement-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .achievement-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
