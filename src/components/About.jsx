@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./About.css"; // Custom CSS for styling
+import "./About.css"; // Updated CSS for better responsiveness and design
 
 const About = () => {
   return (
@@ -15,31 +15,32 @@ const About = () => {
           </Col>
         </Row>
 
-        <Row className="align-items-center">
+        <Row className="align-items-center about-content">
           {/* Left - Introduction */}
-          <Col md={6}>
-            <h3>Who am I?</h3>
+          <Col md={6} data-aos="fade-right">
+            <h3 className="section-heading">Who am I?</h3>
             <p className="about-text">
-              I'm a passionate <strong>Frontend Developer</strong> with a deep interest in web development, React, and UI/UX design.
-              I love creating visually appealing and highly functional web applications.
+              I'm a passionate <strong>Frontend Developer</strong> with a deep
+              interest in web development, React, and UI/UX design. I love
+              creating visually appealing and highly functional web applications.
             </p>
 
-            <h3>Education</h3>
+            <h3 className="section-heading">Education</h3>
             <p className="about-text">
               🎓 B.Tech in Computer Science - XYZ University (2020 - 2024)
             </p>
           </Col>
 
           {/* Right - Skills */}
-          <Col md={6}>
-            <h3>Skills & Expertise</h3>
-            <ul className="about-skills">
-              <li>⚡ React.js & JavaScript</li>
-              <li>⚡ Bootstrap & Tailwind CSS</li>
-              <li>⚡ Responsive Web Design</li>
-              <li>⚡ REST APIs & Firebase</li>
-              <li>⚡ Git & Version Control</li>
-            </ul>
+          <Col md={6} data-aos="fade-left">
+            <h3 className="section-heading">Skills & Expertise</h3>
+            <div className="about-skills">
+              <span>⚡ React.js & JavaScript</span>
+              <span>⚡ Bootstrap & Tailwind CSS</span>
+              <span>⚡ Responsive Web Design</span>
+              <span>⚡ REST APIs & Firebase</span>
+              <span>⚡ Git & Version Control</span>
+            </div>
           </Col>
         </Row>
       </Container>

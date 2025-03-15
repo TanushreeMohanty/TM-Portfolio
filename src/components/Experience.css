@@ -1,39 +1,149 @@
+/* 🔹 Experience Section */
 .experience-section {
-    padding: 80px 0;
-    background-color: #fff;
-  }
-  
+  padding: 80px 0;
+  background: #0d1117; /* Dark theme background */
+  color: #ffffff;
+  text-align: center;
+}
+
+/* 🏆 Section Title */
+.experience-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #007bff; /* Neon Blue */
+  text-shadow: 0px 0px 15px rgba(0, 123, 255, 0.7);
+  margin-bottom: 40px;
+}
+
+/* 🎴 Experience Cards */
+.experience-card {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.exp-card {
+  background: #161b22; /* Slightly lighter than background */
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.5);
+  border-color: #007bff;
+}
+
+/* 🏢 Company Logo */
+.company-logo img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  filter: drop-shadow(0px 0px 5px rgba(0, 123, 255, 0.8));
+}
+
+/* 📝 Role & Company */
+.role {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  color: #b0b3b8;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* ⏳ Duration */
+.duration {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #874CCC;
+  margin-bottom: 10px;
+}
+
+/* 📜 Description */
+.description {
+  font-size: 1rem;
+  color: #e4e6eb;
+  opacity: 0.9;
+}
+
+/* 🔗 Company Link */
+.company-link {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #00aaff;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.company-link:hover {
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgba(0, 123, 255, 1);
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 992px) {
   .experience-title {
     font-size: 2.5rem;
-    font-weight: bold;
-    color: #10439F;
-    text-align: center;
-    margin-bottom: 30px;
   }
   
-  .experience-card {
-    margin-bottom: 30px;
+  .role {
+    font-size: 1.4rem;
   }
   
+  .company-name {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-title {
+    font-size: 2.2rem;
+  }
+
+  .role {
+    font-size: 1.3rem;
+  }
+
+  .company-name {
+    font-size: 1rem;
+  }
+
   .company-logo img {
     width: 60px;
     height: 60px;
-    object-fit: contain;
-    margin-bottom: 10px;
   }
-  
-  .duration {
-    font-weight: bold;
-    color: #874CCC;
+}
+
+@media (max-width: 576px) {
+  .experience-title {
+    font-size: 2rem;
   }
-  
+
+  .role {
+    font-size: 1.2rem;
+  }
+
+  .company-name {
+    font-size: 1rem;
+  }
+
   .company-link {
-    color: #C65BCF;
-    font-weight: bold;
-    text-decoration: none;
+    font-size: 0.9rem;
   }
-  
-  .company-link:hover {
-    text-decoration: underline;
+
+  .exp-card {
+    padding: 15px;
   }
-  
+}

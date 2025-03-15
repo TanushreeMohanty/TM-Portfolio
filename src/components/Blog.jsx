@@ -30,13 +30,15 @@ const Blog = () => {
         <h2 className="blog-title">My Blog & Articles</h2>
         <Row>
           {blogData.map((blog, index) => (
-            <Col md={6} lg={4} key={index} className="blog-card">
+            <Col xs={12} sm={6} md={6} lg={4} key={index} className="blog-card">
               <Card className="blog-item">
-                <Card.Img variant="top" src={blog.image} alt={blog.title} />
+                <div className="blog-img-wrapper">
+                  <Card.Img variant="top" src={blog.image} alt={blog.title} />
+                </div>
                 <Card.Body>
                   <Card.Title>{blog.title}</Card.Title>
                   <Card.Text>{blog.description}</Card.Text>
-                  <Button variant="primary" href={blog.link} target="_blank">
+                  <Button className="read-more-btn" href={blog.link} target="_blank">
                     Read More
                   </Button>
                 </Card.Body>

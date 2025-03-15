@@ -1,37 +1,137 @@
+/* 📌 Projects Section */
 .projects-section {
-    padding: 80px 0;
-    background-color: #f4f4f4;
-  }
-  
+  padding: 80px 0;
+  background-color: #0d1117; /* Dark background */
+  color: #ffffff;
+  text-align: center;
+}
+
+/* 🏆 Title Styling */
+.projects-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #007bff;
+  text-shadow: 0px 0px 10px rgba(0, 123, 255, 0.8);
+}
+
+/* 🔄 Category Buttons */
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  margin: 5px;
+  background: #007bff;
+  border: 2px solid transparent;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.filter-btn.active {
+  background: #874CCC;
+  border-color: white;
+  transform: scale(1.05);
+}
+
+.filter-btn:hover {
+  background: #0056b3;
+  border-color: #ffffff;
+}
+
+/* 📌 Project Grid */
+.project-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* 🎭 Card Styling */
+.project-card {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.project-card-inner {
+  background-color: #161b22;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.project-card-inner:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.4);
+}
+
+/* 📷 Image Wrapper */
+.project-image-wrapper {
+  overflow: hidden;
+}
+
+.project-image-wrapper img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card-inner:hover .project-image-wrapper img {
+  transform: scale(1.1);
+}
+
+/* 🔗 Buttons */
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.project-links button {
+  flex: 1;
+  margin: 5px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.project-links button:hover {
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
   .projects-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #10439F;
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 2rem;
   }
-  
-  .filter-buttons {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
+
   .filter-btn {
-    margin: 5px;
-    background-color: #C65BCF;
-    border: none;
+    font-size: 1rem;
+    padding: 8px 15px;
   }
-  
-  .filter-btn.active {
-    background-color: #874CCC;
+
+  .project-card-inner {
+    width: 90%;
   }
-  
-  .project-card {
-    margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  .projects-title {
+    font-size: 1.8rem;
   }
-  
-  .project-links {
-    display: flex;
-    justify-content: space-between;
+
+  .filter-btn {
+    font-size: 0.9rem;
+    padding: 7px 12px;
   }
-  
+
+  .project-card-inner {
+    width: 95%;
+  }
+}

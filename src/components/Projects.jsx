@@ -7,7 +7,7 @@ const projectData = [
     title: "Portfolio Website",
     category: "Web Apps",
     description: "A responsive portfolio website built with React and Bootstrap.",
-    image: "/images/portfolio.png", // Add images in the public/images folder
+    image: "/images/portfolio.png",
     demoLink: "#",
     githubLink: "#",
   },
@@ -50,7 +50,7 @@ const Projects = () => {
   return (
     <section className="projects-section" id="projects">
       <Container>
-        <h2 className="projects-title">My Projects</h2>
+        <h2 className="projects-title">My <span className="highlight">Projects</span></h2>
 
         <div className="filter-buttons">
           {categories.map((category, index) => (
@@ -64,11 +64,13 @@ const Projects = () => {
           ))}
         </div>
 
-        <Row>
+        <Row className="project-grid">
           {filteredProjects.map((project, index) => (
             <Col md={6} lg={4} key={index} className="project-card">
-              <Card>
-                <Card.Img variant="top" src={project.image} alt={project.title} />
+              <Card className="project-card-inner">
+                <div className="project-image-wrapper">
+                  <Card.Img variant="top" src={project.image} alt={project.title} />
+                </div>
                 <Card.Body>
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>

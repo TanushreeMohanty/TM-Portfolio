@@ -1,40 +1,130 @@
+/* 🌟 Hero Section */
 .hero-section {
-    padding: 80px 0;
-    background-color: #f8f9fa;
+  padding: 100px 0;
+  background: #0d1117; /* Dark theme */
+  color: #ffffff;
+  text-align: center;
+}
+
+/* 📢 Text Styling */
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.highlight {
+  color: #007bff; /* Neon Blue Highlight */
+  text-shadow: 0px 0px 15px rgba(0, 123, 255, 0.7);
+}
+
+.hero-subtitle {
+  font-size: 1.6rem;
+  font-weight: 500;
+  opacity: 0.9;
+  color: #b0b3b8;
+  margin-bottom: 15px;
+}
+
+.hero-bio {
+  font-size: 1.2rem;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* 🎯 Buttons */
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.hero-btn {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  border-radius: 50px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.primary-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.6);
+}
+
+.primary-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(0, 86, 179, 0.9);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.secondary-btn:hover {
+  background-color: rgba(0, 123, 255, 0.2);
+  transform: scale(1.05);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* 🖼️ Profile Image */
+.hero-image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero-img {
+  width: 280px;
+  border-radius: 50%;
+  border: 4px solid #007bff;
+  box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.5);
+  transition: transform 0.4s ease-in-out;
+}
+
+/* 🎭 Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
-    font-weight: bold;
   }
-  
-  .hero-title span {
-    color: #874CCC; /* Highlighted Name */
-  }
-  
+
   .hero-subtitle {
-    font-size: 1.5rem;
-    color: #555;
-    margin-bottom: 15px;
+    font-size: 1.3rem;
   }
-  
+
   .hero-bio {
     font-size: 1.1rem;
-    color: #666;
-    max-width: 500px;
   }
-  
+
   .hero-btn {
     font-size: 1.1rem;
     padding: 10px 20px;
-    border-radius: 5px;
   }
-  
+
   .hero-img {
-    margin-top: 5px;
-    max-width: 300px;
-    border-radius: 50%;
-    border: 5px solid #874CCC;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 230px;
   }
-  
+}

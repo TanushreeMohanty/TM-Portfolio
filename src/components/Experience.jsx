@@ -8,7 +8,7 @@ const experienceData = [
     role: "Software Engineering Intern",
     duration: "June 2024 - Aug 2024",
     description: "Worked on optimizing search algorithms and improving user experience.",
-    logo: "/images/google.png", // Add company logos inside public/images/
+    logo: "/images/google.png",
     link: "https://careers.google.com/",
   },
   {
@@ -34,18 +34,18 @@ const Experience = () => {
     <section className="experience-section" id="experience">
       <Container>
         <h2 className="experience-title">Experience & Internships</h2>
-        <Row>
+        <Row className="justify-content-center">
           {experienceData.map((exp, index) => (
-            <Col md={6} lg={4} key={index} className="experience-card">
-              <Card>
+            <Col xs={12} sm={6} md={4} key={index} className="experience-card">
+              <Card className="exp-card">
                 <Card.Body>
                   <div className="company-logo">
                     <img src={exp.logo} alt={exp.company} />
                   </div>
-                  <Card.Title>{exp.role}</Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted">{exp.company}</Card.Subtitle>
+                  <Card.Title className="role">{exp.role}</Card.Title>
+                  <Card.Subtitle className="company-name">{exp.company}</Card.Subtitle>
                   <Card.Text className="duration">{exp.duration}</Card.Text>
-                  <Card.Text>{exp.description}</Card.Text>
+                  <Card.Text className="description">{exp.description}</Card.Text>
                   <a href={exp.link} target="_blank" rel="noopener noreferrer" className="company-link">
                     Visit Company
                   </a>

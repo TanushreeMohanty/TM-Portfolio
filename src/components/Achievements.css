@@ -1,33 +1,86 @@
+/* 🌟 Achievements Section */
 .achievements-section {
-    padding: 80px 0;
-    background-color: #f4f4f4;
-  }
-  
+  padding: 100px 0;
+  background: #0d1117; /* Dark background */
+  color: #ffffff;
+  text-align: center;
+}
+
+/* 🏆 Title Styling */
+.achievements-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #007bff;
+  text-shadow: 0px 0px 15px rgba(0, 123, 255, 0.7);
+  margin-bottom: 40px;
+}
+
+/* 📜 Achievement Cards */
+.achievement-card {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.achievement-item {
+  background: #161b22; /* Slightly lighter dark */
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  border: 2px solid transparent;
+}
+
+.achievement-item:hover {
+  transform: scale(1.06);
+  box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.5);
+  border-color: #007bff;
+}
+
+/* 🌟 Icon Styling */
+.achievement-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #007bff;
+  text-shadow: 0px 0px 10px rgba(0, 123, 255, 0.7);
+}
+
+/* 📝 Text Styling */
+.achievement-item h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e1e1e1;
+}
+
+.achievement-item p {
+  font-size: 1.1rem;
+  color: #b0b3b8;
+  line-height: 1.5;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
   .achievements-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #10439F;
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 2.3rem;
   }
-  
-  .achievement-card {
-    margin-bottom: 30px;
+
+  .achievement-item h5 {
+    font-size: 1.3rem;
   }
-  
-  .achievement-item {
-    text-align: center;
-    padding: 20px;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 10px;
+
+  .achievement-item p {
+    font-size: 1rem;
   }
-  
-  .achievement-item:hover {
-    transform: scale(1.05);
-  }
-  
+
   .achievement-icon {
     font-size: 2.5rem;
-    margin-bottom: 10px;
   }
-  
+}
+
+@media (max-width: 576px) {
+  .achievements-title {
+    font-size: 2rem;
+  }
+}
