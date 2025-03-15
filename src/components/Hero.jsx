@@ -20,7 +20,7 @@ const Hero = () => {
             </p>
             <div className="hero-buttons">
               <Button
-                href="/Resume_Tanushree_Mohanty.pdf"
+                href="/Resume Tanushree Mohanty.pdf"
                 target="_blank"
                 className="hero-btn primary-btn"
               >
