@@ -34,7 +34,7 @@ const Achievements = () => {
   return (
     <section id="achievements">
       <Container>
-        <h2 className="achievements-title">Achievements & Certifications</h2>
+        <h2 className="title">Achievements & Certifications</h2>
         <Row>
           {achievementsData.map((item, index) => (
             <Col md={6} lg={4} key={index} className="achievement-card">

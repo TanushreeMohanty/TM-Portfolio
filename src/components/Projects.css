@@ -1,38 +1,40 @@
-
-
-/* 🏆 Title Styling */
-.projects-title {
-  font-size: 2.5rem;
+/* 🎯 General Styles */
+.title {
+  font-size: 2.8rem;
   font-weight: bold;
-  text-transform: capitalize;
+  text-align: center;
   margin-bottom: 30px;
+  color: #bfa58a;
 }
 
 
 /* 🔄 Category Buttons */
 .filter-buttons {
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .filter-btn {
   margin: 5px;
-  background: #ffffff;
-  border: 2px solid transparent;
+  background: #a97155;
+  border: none;
   color: white;
-  padding: 10px 20px;
-  font-size: 1.1rem;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
   transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .filter-btn.active {
-  background: #874CCC;
-  border-color: white;
-  transform: scale(1.05);
+  background: rgba(169, 113, 85, 0.7);
+  transform: scale(1.1);
 }
 
 .filter-btn:hover {
-  background: #0056b3;
-  border-color: #ffffff;
+  background: rgba(169, 113, 85);
+  color: #fff;
+  transform: scale(1.05);
 }
 
 /* 📌 Project Grid */
@@ -40,26 +42,27 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 /* 🎭 Card Styling */
 .project-card {
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
 }
 
 .project-card-inner {
   background-color: #161b22;
-  border-radius: 12px;
+  border-radius: 15px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-card-inner:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.4);
+  box-shadow: 0px 0px 15px rgba(199, 91, 207, 0.4);
 }
 
 /* 📷 Image Wrapper */
@@ -70,17 +73,35 @@
 .project-image-wrapper img {
   width: 100%;
   transition: transform 0.3s ease-in-out;
+  border-bottom: 3px solid #a97155;
 }
 
 .project-card-inner:hover .project-image-wrapper img {
-  transform: scale(1.1);
+  transform: scale(1.08);
+}
+
+/* 📝 Card Content */
+.project-card-inner .card-body {
+  padding: 20px;
+  color: #f4f4f4;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #a97155;
+}
+
+.card-text {
+  font-size: 1rem;
+  opacity: 0.85;
 }
 
 /* 🔗 Buttons */
 .project-links {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .project-links button {
@@ -88,20 +109,48 @@
   margin: 5px;
   border-radius: 50px;
   font-weight: bold;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-links button:first-child {
+  background: #a97155;
+  border: none;
+}
+
+.project-links button:last-child {
+  background: #333;
+  border: none;
 }
 
 .project-links button:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  opacity: 0.9;
 }
 
 /* 📱 Responsive Adjustments */
+@media (max-width: 992px) {
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .filter-btn {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+
+  .project-card-inner {
+    width: 85%;
+  }
+}
+
 @media (max-width: 768px) {
-  .projects-title {
+  .title {
     font-size: 2rem;
   }
 
   .filter-btn {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 8px 15px;
   }
 
@@ -111,12 +160,12 @@
 }
 
 @media (max-width: 576px) {
-  .projects-title {
+  .title {
     font-size: 1.8rem;
   }
 
   .filter-btn {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     padding: 7px 12px;
   }
 

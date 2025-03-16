@@ -34,7 +34,7 @@ const Experience = () => {
   return (
     <section id="experience">
       <Container>
-        <h2 className="experience-title">Experience & Internships</h2>
+        <h2 className="title">Experience & Internships</h2>
         <Row className="justify-content-center">
           {experienceData.map((exp, index) => (
             <Col xs={12} sm={6} md={4} key={index} className="experience-card">

@@ -10,10 +10,7 @@ const About = () => {
       <Container>
         <Row className="text-center">
           <Col>
-            <h2 className="about-title">About Me</h2>
-            <p className="about-tagline">
-              "Building interactive and user-friendly digital experiences."
-            </p>
+            <h2 className="title">About Me</h2>
           </Col>
         </Row>
 

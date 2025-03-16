@@ -17,7 +17,7 @@ const Hero = () => {
 
           {/* Left Content - Text */}
           <Col md={6} className="hero-text">
-            <h1 className="hero-title">
+            <h1 className="title">
               Hey, I'm <span className="highlight">Tanushree Mohanty</span>
             </h1>
             <h2 className="hero-subtitle">Frontend Developer | React Enthusiast</h2>

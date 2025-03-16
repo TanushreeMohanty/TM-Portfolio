@@ -1,13 +1,7 @@
 /* 🌟 Achievements Section */
 
 
-/* 🏆 Title Styling */
-.achievements-title {
-  font-size: 2.8rem;
-  font-weight: bold;
-  text-shadow: 0px 0px 15px rgba(0, 123, 255, 0.7);
-  margin-bottom: 40px;
-}
+
 
 /* 📜 Achievement Cards */
 .achievement-card {
@@ -55,9 +49,6 @@
 
 /* 📱 Responsive Design */
 @media (max-width: 768px) {
-  .achievements-title {
-    font-size: 2.3rem;
-  }
 
   .achievement-item h5 {
     font-size: 1.3rem;
@@ -69,11 +60,5 @@
 
   .achievement-icon {
     font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .achievements-title {
-    font-size: 2rem;
   }
 }

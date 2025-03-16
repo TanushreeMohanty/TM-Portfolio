@@ -27,7 +27,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials">
       <Container>
-        <h2 className="testimonials-title">What People Say</h2>
+        <h2 className="title">What People Say</h2>
         <Row>
           {testimonials.map((testimonial, index) => (
             <Col md={4} key={index}>

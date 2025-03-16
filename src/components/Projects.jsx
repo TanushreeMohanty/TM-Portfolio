@@ -51,7 +51,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <Container>
-        <h2 className="projects-title">My <span className="highlight">Projects</span></h2>
+        <h2 className="title">My Projects</h2>
 
         <div className="filter-buttons">
           {categories.map((category, index) => (
@@ -76,10 +76,10 @@ const Projects = () => {
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>
                   <div className="project-links">
-                    <Button variant="primary" href={project.demoLink} target="_blank">
+                    <Button variant="success" href={project.demoLink} target="_blank">
                       Live Demo
                     </Button>
-                    <Button variant="dark" href={project.githubLink} target="_blank">
+                    <Button variant="light" href={project.githubLink} target="_blank">
                       GitHub
                     </Button>
                   </div>

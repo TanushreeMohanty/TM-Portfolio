@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <Container>
-        <h2 className="contact-title">Get in <span className="highlight">Touch</span></h2>
+        <h2 className="title">Get in Touch</h2>
         <Row className="contact-wrapper">
           {/* Contact Form */}
           <Col lg={6} md={12}>

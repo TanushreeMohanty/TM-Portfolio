@@ -1,12 +1,4 @@
-/* 🌟 Title Styling */
-.contact-title {
-  font-size: 2.8rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
+
 
 
 /* 📩 Form Styling */
@@ -108,10 +100,6 @@
       flex-direction: column-reverse;
   }
 
-  .contact-title {
-      font-size: 2.2rem;
-  }
-
   .social-links {
       gap: 15px;
   }
@@ -122,9 +110,7 @@
 }
 
 @media (max-width: 768px) {
-  .contact-title {
-      font-size: 2rem;
-  }
+
 
   .contact-form {
       padding: 20px;

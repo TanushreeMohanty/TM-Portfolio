@@ -10,14 +10,7 @@ section {
   justify-content: center;
 }
 
-/* 📢 Text Styling */
-.hero-title {
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  animation: fadeIn 1s ease-in-out;
-}
+
 
 .highlight {
   color: #a97155; /* Elegant Brown */
@@ -130,9 +123,6 @@ section {
 
 /* 📱 Responsive Styles */
 @media (max-width: 1024px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
 
   .hero-subtitle {
     font-size: 1.4rem;
@@ -157,9 +147,6 @@ section {
     padding: 60px 5%;
   }
 
-  .hero-title {
-    font-size: 2rem;
-  }
 
   .hero-subtitle {
     font-size: 1.2rem;
