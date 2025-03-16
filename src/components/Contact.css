@@ -40,22 +40,6 @@
   transform: scale(1.05);
 }
 
-.resume-btn {
-  font-size: 1.2rem;
-  padding: 12px 30px;
-  background-color: transparent;
-  border: 2px solid #8b5e3b;
-  border-radius: 8px;
-  transition: 0.3s ease-in-out;
-  color: #a97155;
-}
-
-.resume-btn:hover {
-  background-color: rgba(139, 94, 59, 0.2);
-  transform: scale(1.05);
-  border-color: #a97155;
-}
-
 .social-links {
   display: flex;
   justify-content: center;
@@ -64,23 +48,20 @@
   margin-bottom: 10px;
 }
 
-.social-icon {
-  font-size: 4rem;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-  padding: 10px;
-  border-radius: 30%;
+.social-image {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.linkedin {
-  color: #0077b5;
+.social-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
 
-.github {
-  color: white;
-}
-
-.social-icon:hover {
-  transform: scale(1.2);
+.contact-image {
+  width: 100%;
+  max-width: 400px;
 }
 
 @media (max-width: 992px) {
@@ -92,8 +73,15 @@
       gap: 15px;
   }
 
-  .social-icon {
-      font-size: 4rem;
+  .contact-image {
+    max-width: 250px;
+    margin-bottom: 5px;
+  }
+  
+  .social-image {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
   }
 }
 
@@ -108,16 +96,20 @@
       font-size: 1.1rem;
   }
 
-  .resume-btn {
-      font-size: 1rem;
-      padding: 10px 20px;
-  }
 
   .social-links {
       gap: 10px;
   }
 
-  .social-icon {
-      font-size: 3rem;
+  .social-image {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
   }
+
+  .contact-image {
+    max-width: 250px;
+    margin: 20px;
+  }
+
 }

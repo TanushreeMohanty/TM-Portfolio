@@ -1,0 +1,77 @@
+/* 🔹 Navbar Styling */
+.custom-navbar {
+    background-color: #a97155; /* Light Background */
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 🔹 Navbar Brand */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* 🔹 Navbar Logo */
+  .navbar-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+  
+  /* 🔹 Navbar Links */
+  .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white !important;
+    margin-left: 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* 🎨 Hover & Active Effects */
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #462e23 !important;
+    transform: scale(1.05);
+  }
+  
+  /* 🔹 Navbar Toggle Button */
+/* 🔹 Navbar Toggle Button */
+.navbar-toggler {
+    border: 2px solid #462e23 !important; /* Blue border */
+    border-radius: 30%; /* Rounded corners */
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* 🔹 Toggle Button Hover Effect */
+  .navbar-toggler:hover {
+    background-color: #462e23;
+    border-color: #a97155;
+  }
+  
+  
+  /* 🎨 Active Navbar Link */
+  .navbar-nav .nav-link.active {
+    color: #462e23 !important;
+    font-weight: bold;
+  }
+  
+  /* 📱 Responsive Navbar */
+  @media (max-width: 992px) {
+    .navbar-nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .nav-link {
+      display: block;
+      padding: 10px;
+    }
+  }
+  

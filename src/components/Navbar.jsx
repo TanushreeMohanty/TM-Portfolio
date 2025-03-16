@@ -1,19 +1,23 @@
 import React, { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import "./Navbar.css";
+import logo from "../assets/logo.png"; // Ensure you have a logo image
 
 const CustomNavbar = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <Navbar expand="lg" className="navbar-light bg-light" fixed="top" expanded={expanded}>
+    <Navbar expand="lg" className="custom-navbar" fixed="top" expanded={expanded}>
       <Container>
-        {/* Brand */}
-        <Navbar.Brand href="#hero">My Portfolio</Navbar.Brand>
+        {/* Logo & Brand */}
+        <Navbar.Brand href="#hero" className="navbar-brand">
+          <img src={logo} alt="Logo" className="navbar-logo" /> Tanushree Mohanty
+        </Navbar.Brand>
 
         {/* Navbar Toggle Button */}
         <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} />
 
-        {/* Navbar Content */}
+        {/* Navbar Links */}
         <Navbar.Collapse>
           <Nav className="ms-auto">
             {[
@@ -25,7 +29,12 @@ const CustomNavbar = () => {
               { href: "#testimonials", label: "Testimonials" },
               { href: "#contact", label: "Contact" },
             ].map(({ href, label }) => (
-              <Nav.Link key={href} href={href} onClick={() => setExpanded(false)}>
+              <Nav.Link
+                key={href}
+                href={href}
+                onClick={() => setExpanded(false)}
+                className="nav-link"
+              >
                 {label}
               </Nav.Link>
             ))}

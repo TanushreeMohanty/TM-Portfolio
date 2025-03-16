@@ -1,7 +1,11 @@
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import "./Contact.css";
+
+// Importing Images Instead of Icons
+import linkedinImg from "../assets/linkedin.png";
+import githubImg from "../assets/github.png";
+import contactImg from "../assets/contact.svg"; // New Image Added
 
 const Contact = () => {
   return (
@@ -37,19 +41,16 @@ const Contact = () => {
 
           {/* Resume Download & Social Links */}
           <Col lg={6} md={12} className="contact-info text-center">
-            <Button href="/Resume_Tanushree_Mohanty.pdf" target="_blank" className="resume-btn">
-              Download Resume
-            </Button>
+          <img src={contactImg} alt="Contact Illustration" className="contact-image" />
+
+
 
             <div className="social-links mt-4">
               <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="social-icon linkedin" />
+                <img src={linkedinImg} alt="LinkedIn" className="social-image linkedin" />
               </a>
               <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">
-                <FaGithub className="social-icon github" />
-              </a>
-              <a href="https://twitter.com/yourtwitter" target="_blank" rel="noopener noreferrer">
-                <FaTwitter className="social-icon twitter" />
+                <img src={githubImg} alt="GitHub" className="social-image github" />
               </a>
             </div>
           </Col>

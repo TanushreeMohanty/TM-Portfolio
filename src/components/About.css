@@ -1,5 +1,6 @@
 .about-heading {
   color: #a97155;
+  margin: 10px;
 }
 
 .about-skills {
@@ -13,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
   font-size: 1rem;
   background: #ffffff18;
   padding: 10px 16px;
@@ -34,14 +35,16 @@
 }
 
 /* 🌈 Icon Colors */
-.react { color: #61DAFB; }          /* React */
-.js { color: #F7DF1E; }             /* JavaScript */
-.bootstrap { color: #7952B3; }      /* Bootstrap */
-.tailwind { color: #38B2AC; }       /* Tailwind CSS */
-.css { color: #1572B6; }            /* CSS */
-.database { color: #FF5733; }       /* REST APIs */
-.firebase { color: #FFCA28; }       /* Firebase */
-.git { color: #F05032; }            /* Git */
+.html { color: #E34F26; }        /* HTML */
+.css { color: #1572B6; }         /* CSS */
+.js { color: #F7DF1E; }          /* JavaScript */
+.react { color: #61DAFB; }       /* React */
+.python { color: #3776AB; }      /* Python */
+.django { color: #092E20; }      /* Django */
+.api { color: #FF5733; }         /* API Integration */
+.vercel { color: #000000; }      /* Vercel */
+.git { color: #F05032; }         /* Git */
+.github { color: #181717; }      /* GitHub */
 
 /* 📱 Responsive Design */
 @media (max-width: 1024px) {
@@ -96,5 +99,46 @@
 
   .skill-icon {
     font-size: 1.3rem;
+  }
+}
+
+/* 📌 Education Section */
+.education-container {
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.education-item {
+  font-size: 1.1rem;
+  font-weight:500;
+  color: #bfa58a;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-left: 4px solid #a97155;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.education-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+}
+
+.education-score {
+  font-size: 1rem;
+  color: white;
+  margin-left: 10px;
+  display: block;
+}
+
+/* 🌟 Responsive Adjustments */
+@media (max-width: 768px) {
+  .education-item {
+    font-size: 1rem;
+  }
+
+  .education-score {
+    font-size: 0.9rem;
   }
 }
