@@ -1,16 +1,10 @@
 /* 🌟 Achievements Section */
-.achievements-section {
-  padding: 100px 0;
-  background: #0d1117; /* Dark background */
-  color: #ffffff;
-  text-align: center;
-}
+
 
 /* 🏆 Title Styling */
 .achievements-title {
   font-size: 2.8rem;
   font-weight: bold;
-  color: #007bff;
   text-shadow: 0px 0px 15px rgba(0, 123, 255, 0.7);
   margin-bottom: 40px;
 }
@@ -36,14 +30,13 @@
 .achievement-item:hover {
   transform: scale(1.06);
   box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.5);
-  border-color: #007bff;
+  border-color: #ffffff;
 }
 
 /* 🌟 Icon Styling */
 .achievement-icon {
   font-size: 3rem;
   margin-bottom: 15px;
-  color: #007bff;
   text-shadow: 0px 0px 10px rgba(0, 123, 255, 0.7);
 }
 

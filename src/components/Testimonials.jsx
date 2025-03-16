@@ -25,7 +25,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="testimonials-section" id="testimonials">
+    <section id="testimonials">
       <Container>
         <h2 className="testimonials-title">What People Say</h2>
         <Row>

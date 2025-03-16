@@ -32,7 +32,7 @@ const experienceData = [
 
 const Experience = () => {
   return (
-    <section className="experience-section" id="experience">
+    <section id="experience">
       <Container>
         <h2 className="experience-title">Experience & Internships</h2>
         <Row className="justify-content-center">

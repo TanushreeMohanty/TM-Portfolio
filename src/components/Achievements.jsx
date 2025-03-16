@@ -32,7 +32,7 @@ const achievementsData = [
 
 const Achievements = () => {
   return (
-    <section className="achievements-section" id="achievements">
+    <section id="achievements">
       <Container>
         <h2 className="achievements-title">Achievements & Certifications</h2>
         <Row>

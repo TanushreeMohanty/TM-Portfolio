@@ -5,7 +5,7 @@ import profileImage from "../assets/profile.jpeg";
 
 const Hero = () => {
   return (
-    <section className="hero-section" id="hero">
+    <section id="hero">
       <Container>
         <Row className="align-items-center text-center text-md-start">
           {/* Right - Profile Image with Floating Animation */}
@@ -29,7 +29,7 @@ const Hero = () => {
                 📄 Resume
               </Button>
               <Button href="#contact" className="hero-btn secondary-btn">
-                💼 Hire Me
+                💼 Let's Connect
               </Button>
             </div>
           </Col>

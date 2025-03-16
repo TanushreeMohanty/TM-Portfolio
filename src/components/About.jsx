@@ -1,10 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./About.css"; // Updated CSS for better responsiveness and design
+import { FaReact, FaJsSquare, FaBootstrap, FaCss3Alt, FaDatabase, FaGitAlt } from "react-icons/fa";
+import { SiTailwindcss, SiFirebase } from "react-icons/si";
+import "./About.css";
 
 const About = () => {
   return (
-    <section className="about-section" id="about">
+    <section id="about">
       <Container>
         <Row className="text-center">
           <Col>
@@ -15,9 +17,9 @@ const About = () => {
           </Col>
         </Row>
 
-        <Row className="align-items-center about-content">
+        <Row className="about-content">
           {/* Left - Introduction */}
-          <Col md={6} data-aos="fade-right">
+          <Col lg={6} md={12} className="about-intro" data-aos="fade-right">
             <h3 className="section-heading">Who am I?</h3>
             <p className="about-text">
               I'm a passionate <strong>Frontend Developer</strong> with a deep
@@ -32,14 +34,17 @@ const About = () => {
           </Col>
 
           {/* Right - Skills */}
-          <Col md={6} data-aos="fade-left">
+          <Col lg={6} md={12} className="about-skills-container" data-aos="fade-left">
             <h3 className="section-heading">Skills & Expertise</h3>
             <div className="about-skills">
-              <span>⚡ React.js & JavaScript</span>
-              <span>⚡ Bootstrap & Tailwind CSS</span>
-              <span>⚡ Responsive Web Design</span>
-              <span>⚡ REST APIs & Firebase</span>
-              <span>⚡ Git & Version Control</span>
+              <div className="skill-item"><FaReact className="skill-icon react" /> React.js</div>
+              <div className="skill-item"><FaJsSquare className="skill-icon js" /> JavaScript</div>
+              <div className="skill-item"><FaBootstrap className="skill-icon bootstrap" /> Bootstrap</div>
+              <div className="skill-item"><SiTailwindcss className="skill-icon tailwind" /> Tailwind CSS</div>
+              <div className="skill-item"><FaCss3Alt className="skill-icon css" /> Responsive Web Design</div>
+              <div className="skill-item"><FaDatabase className="skill-icon database" /> REST APIs</div>
+              <div className="skill-item"><SiFirebase className="skill-icon firebase" /> Firebase</div>
+              <div className="skill-item"><FaGitAlt className="skill-icon git" /> Git & Version Control</div>
             </div>
           </Col>
         </Row>

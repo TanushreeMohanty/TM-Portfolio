@@ -1,92 +1,72 @@
-/* 🌟 General Styles */
-.about-section {
-  padding: 80px 0;
-  background-color: #0d1117; /* Dark theme */
-  color: white;
-}
-
-/* 🔥 Title & Tagline */
-.about-title {
-  font-size: 2.8rem;
-  font-weight: bold;
-  color: #007bff; /* Blue highlight */
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.about-tagline {
-  font-size: 1.3rem;
-  font-style: italic;
-  color: #b0b3b8;
-  margin-bottom: 40px;
-}
-
-/* 📝 Text Content */
 .section-heading {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #c65bcf;
-  margin-bottom: 15px;
-}
-
-.about-text {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #e0e0e0;
-  margin-bottom: 25px;
+  color: #a97155;
 }
 
 /* 🎯 Skills Section */
 .about-skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
+  justify-content: center;
 }
 
-.about-skills span {
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   font-size: 1rem;
-  background: linear-gradient(135deg, #10439F, #874CCC);
-  color: white;
-  padding: 10px 18px;
+  background: #f4f4f4;
+  color: #333;
+  padding: 10px 16px;
   border-radius: 20px;
   font-weight: bold;
   transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 140px;
 }
 
-.about-skills span:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 12px rgba(135, 76, 204, 0.6);
+.skill-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* 🎭 Animations */
-[data-aos="fade-right"] {
-  opacity: 0;
-  transform: translateX(-30px);
-  animation: fadeInRight 1s forwards;
+.skill-icon {
+  font-size: 1.8rem;
 }
 
-[data-aos="fade-left"] {
-  opacity: 0;
-  transform: translateX(30px);
-  animation: fadeInLeft 1s forwards;
-}
+/* 🌈 Icon Colors */
+.react { color: #61DAFB; }          /* React */
+.js { color: #F7DF1E; }             /* JavaScript */
+.bootstrap { color: #7952B3; }      /* Bootstrap */
+.tailwind { color: #38B2AC; }       /* Tailwind CSS */
+.css { color: #1572B6; }            /* CSS */
+.database { color: #FF5733; }       /* REST APIs */
+.firebase { color: #FFCA28; }       /* Firebase */
+.git { color: #F05032; }            /* Git */
 
-@keyframes fadeInRight {
-  to {
-    opacity: 1;
-    transform: translateX(0);
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+  .about-skills {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+  }
+
+  .skill-item {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .skill-icon {
+    font-size: 1.5rem;
   }
 }
 
-@keyframes fadeInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* 📱 Responsive Adjustments */
 @media (max-width: 768px) {
+  .about-skills {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  }
+
   .about-title {
     font-size: 2.3rem;
   }
@@ -96,6 +76,7 @@
   }
 
   .section-heading {
+    color: #a97155;
     font-size: 1.5rem;
   }
 
@@ -103,8 +84,27 @@
     font-size: 1.1rem;
   }
 
-  .about-skills span {
+  .skill-item {
     font-size: 0.9rem;
-    padding: 8px 15px;
+    padding: 8px 14px;
+  }
+
+  .skill-icon {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-skills {
+    grid-template-columns: repeat(1, 1fr); /* Stacks items in a column */
+  }
+
+  .skill-item {
+    width: 90%;
+    text-align: left;
+  }
+
+  .skill-icon {
+    font-size: 1.3rem;
   }
 }

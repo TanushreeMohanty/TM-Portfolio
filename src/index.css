@@ -10,8 +10,7 @@ body {
   /* Dark Mode */
   body.dark-mode {
     background-color: #1e1e1e;
-    color: #ffffff;
-  }
+    }
   
   .dark-mode .navbar {
     background-color: #333;

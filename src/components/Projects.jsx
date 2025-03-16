@@ -49,7 +49,7 @@ const Projects = () => {
       : projectData.filter((project) => project.category === selectedCategory);
 
   return (
-    <section className="projects-section" id="projects">
+    <section id="projects">
       <Container>
         <h2 className="projects-title">My <span className="highlight">Projects</span></h2>
 

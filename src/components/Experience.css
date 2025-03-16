@@ -1,16 +1,9 @@
-/* 🔹 Experience Section */
-.experience-section {
-  padding: 80px 0;
-  background: #0d1117; /* Dark theme background */
-  color: #ffffff;
-  text-align: center;
-}
 
 /* 🏆 Section Title */
 .experience-title {
   font-size: 2.8rem;
   font-weight: bold;
-  color: #007bff; /* Neon Blue */
+  color: #ffffff; /* Neon Blue */
   text-shadow: 0px 0px 15px rgba(0, 123, 255, 0.7);
   margin-bottom: 40px;
 }
@@ -34,7 +27,7 @@
 .exp-card:hover {
   transform: translateY(-5px);
   box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.5);
-  border-color: #007bff;
+  border-color: #ffffff;
 }
 
 /* 🏢 Company Logo */
@@ -50,7 +43,6 @@
 .role {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ffffff;
 }
 
 .company-name {
@@ -87,7 +79,6 @@
 }
 
 .company-link:hover {
-  color: #ffffff;
   text-shadow: 0px 0px 10px rgba(0, 123, 255, 1);
   transform: scale(1.05);
 }

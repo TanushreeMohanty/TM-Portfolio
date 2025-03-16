@@ -19,11 +19,9 @@ const CustomNavbar = () => {
             {[
               { href: "#hero", label: "Home" },
               { href: "#about", label: "About" },
-              { href: "#skills", label: "Skills" },
               { href: "#projects", label: "Projects" },
               { href: "#experience", label: "Experience" },
               { href: "#achievements", label: "Achievements" },
-              { href: "#blog", label: "Blog" },
               { href: "#testimonials", label: "Testimonials" },
               { href: "#contact", label: "Contact" },
             ].map(({ href, label }) => (

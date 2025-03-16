@@ -5,7 +5,7 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <section className="contact-section">
+    <section id="contact">
       <Container>
         <h2 className="contact-title">Get in <span className="highlight">Touch</span></h2>
         <Row className="contact-wrapper">
