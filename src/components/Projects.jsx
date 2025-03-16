@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import "./Projects.css";
 import demoImg from "../assets/demo.webp"; 
+import p1 from "../assets/project1.png"; 
 
 const projectData = [
   {
-    title: "Portfolio Website",
+    title: "TaskSync",
     category: "Web Apps",
-    description: "A responsive portfolio website built with React and Bootstrap.",
-    image: demoImg,
-    demoLink: "#",
-    githubLink: "#",
+    description: "This is a Todo App created using React.js",
+    image: p1,
+    demoLink: "https://task-sync-app.vercel.app/",
+    githubLink: "https://github.com/TanushreeMohanty/TaskSync.git",
   },
   {
     title: "AI Chatbot",

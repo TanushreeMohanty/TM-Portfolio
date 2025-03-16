@@ -1,34 +1,33 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "./Experience.css";
-import demoImg from "../assets/demo.webp"; 
-import google from "../assets/google.png"; 
-import ms from "../assets/ms.png"; 
+import sgtu from "../assets/sgtu.jpg"; 
+import iaa from "../assets/iaa.png"; 
 
 const experienceData = [
   {
-    company: "Google",
-    role: "Software Engineering Intern",
-    duration: "June 2024 - Aug 2024",
-    description: "Worked on optimizing search algorithms and improving user experience.",
-    logo: google,
-    link: "https://careers.google.com/",
+    company: "Indian Aviation Academy",
+    role: "Software Development Intern",
+    duration: "Feb 2025 - Present",
+    description: "Working on Management System in IT Domain",
+    logo: iaa,
+    link: "https://www.iaa.edu.in/",
   },
   {
-    company: "Microsoft",
+    company: "SGT University",
     role: "Frontend Developer Intern",
-    duration: "Jan 2024 - May 2024",
-    description: "Developed responsive UI components using React and Bootstrap.",
-    logo: ms,
-    link: "https://careers.microsoft.com/",
+    duration: "April 2024 - July 2024",
+    description: "Worked on official SGT website ",
+    logo: sgtu,
+    link: "https://sgtuniversity.ac.in/",
   },
   {
-    company: "Startup XYZ",
-    role: "Full Stack Developer Intern",
-    duration: "July 2023 - Dec 2023",
-    description: "Built and deployed a scalable web application for the company's clients.",
-    logo: demoImg,
-    link: "https://www.startupxyz.com/",
+    company: "SGT University",
+    role: "Wordpress Developer Intern",
+    duration: "April 2023 - May 2023",
+    description: "Built and deployed various webpages for the University.",
+    logo: sgtu,
+    link: "https://sgtuniversity.ac.in/",
   },
 ];
 

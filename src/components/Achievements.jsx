@@ -18,16 +18,6 @@ const achievementsData = [
     description: "Completed a 5-day AR/VR workshop, gaining hands-on experience in immersive technologies.",
     icon: "📜",
   },
-  {
-    title: "LinkedIn Learning - AI Fundamentals",
-    description: "Completed a LinkedIn Learning course on Artificial Intelligence Fundamentals.",
-    icon: "📜",
-  },
-  {
-    title: "Udemy - Full Stack Web Development",
-    description: "Completed a Udemy course covering React, Node.js, and MongoDB.",
-    icon: "📜",
-  },
 ];
 
 const Achievements = () => {
