@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "./Experience.css";
+import demoImg from "../assets/demo.webp"; 
 
 const experienceData = [
   {
@@ -8,7 +9,7 @@ const experienceData = [
     role: "Software Engineering Intern",
     duration: "June 2024 - Aug 2024",
     description: "Worked on optimizing search algorithms and improving user experience.",
-    logo: "/images/google.png",
+    logo: demoImg,
     link: "https://careers.google.com/",
   },
   {
@@ -16,7 +17,7 @@ const experienceData = [
     role: "Frontend Developer Intern",
     duration: "Jan 2024 - May 2024",
     description: "Developed responsive UI components using React and Bootstrap.",
-    logo: "/images/microsoft.png",
+    logo: demoImg,
     link: "https://careers.microsoft.com/",
   },
   {
@@ -24,7 +25,7 @@ const experienceData = [
     role: "Full Stack Developer Intern",
     duration: "July 2023 - Dec 2023",
     description: "Built and deployed a scalable web application for the company's clients.",
-    logo: "/images/startup.png",
+    logo: demoImg,
     link: "https://www.startupxyz.com/",
   },
 ];

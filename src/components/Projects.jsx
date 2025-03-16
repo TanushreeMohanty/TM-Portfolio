@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import "./Projects.css";
+import demoImg from "../assets/demo.webp"; 
 
 const projectData = [
   {
     title: "Portfolio Website",
     category: "Web Apps",
     description: "A responsive portfolio website built with React and Bootstrap.",
-    image: "/images/portfolio.png",
+    image: demoImg,
     demoLink: "#",
     githubLink: "#",
   },
@@ -15,7 +16,7 @@ const projectData = [
     title: "AI Chatbot",
     category: "AI/ML",
     description: "A chatbot powered by NLP and machine learning algorithms.",
-    image: "/images/chatbot.png",
+    image: demoImg,
     demoLink: "#",
     githubLink: "#",
   },
@@ -23,7 +24,7 @@ const projectData = [
     title: "VR Learning App",
     category: "AR/VR",
     description: "An immersive VR learning platform for students.",
-    image: "/images/vr-learning.png",
+    image: demoImg,
     demoLink: "#",
     githubLink: "#",
   },
@@ -31,7 +32,7 @@ const projectData = [
     title: "Hackathon Project",
     category: "Hackathon Projects",
     description: "An innovative solution developed during a 24-hour hackathon.",
-    image: "/images/hackathon.png",
+    image: demoImg,
     demoLink: "#",
     githubLink: "#",
   },
