@@ -1,14 +1,3 @@
-/* 🎯 General Styles */
-.title {
-  font-size: 2.8rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #bfa58a;
-}
-
-
-/* 🔄 Category Buttons */
 .filter-buttons {
   text-align: center;
   margin-bottom: 25px;
@@ -27,7 +16,7 @@
 }
 
 .filter-btn.active {
-  background: rgba(169, 113, 85, 0.7);
+  background: rgb(92, 61, 45);
   transform: scale(1.1);
 }
 
@@ -37,7 +26,6 @@
   transform: scale(1.05);
 }
 
-/* 📌 Project Grid */
 .project-grid {
   display: flex;
   justify-content: center;
@@ -45,14 +33,13 @@
   gap: 20px;
 }
 
-/* 🎭 Card Styling */
 .project-card {
   display: flex;
   justify-content: center;
 }
 
 .project-card-inner {
-  background-color: #161b22;
+  background-color: #2b2828;
   border-radius: 15px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -62,10 +49,8 @@
 
 .project-card-inner:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 15px rgba(199, 91, 207, 0.4);
 }
 
-/* 📷 Image Wrapper */
 .project-image-wrapper {
   overflow: hidden;
 }
@@ -80,7 +65,6 @@
   transform: scale(1.08);
 }
 
-/* 📝 Card Content */
 .project-card-inner .card-body {
   padding: 20px;
   color: #f4f4f4;
@@ -97,7 +81,6 @@
   opacity: 0.85;
 }
 
-/* 🔗 Buttons */
 .project-links {
   display: flex;
   justify-content: space-between;
@@ -128,7 +111,6 @@
   opacity: 0.9;
 }
 
-/* 📱 Responsive Adjustments */
 @media (max-width: 992px) {
   .title {
     font-size: 2.3rem;

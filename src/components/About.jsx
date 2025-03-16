@@ -17,14 +17,14 @@ const About = () => {
         <Row className="about-content">
           {/* Left - Introduction */}
           <Col lg={6} md={12} className="about-intro" data-aos="fade-right">
-            <h3 className="section-heading">Who am I?</h3>
+            <h3 className="about-heading">Who am I?</h3>
             <p className="about-text">
               I'm a passionate <strong>Frontend Developer</strong> with a deep
               interest in web development, React, and UI/UX design. I love
               creating visually appealing and highly functional web applications.
             </p>
 
-            <h3 className="section-heading">Education</h3>
+            <h3 className="about-heading">Education</h3>
             <p className="about-text">
               🎓 B.Tech in Computer Science - XYZ University (2020 - 2024)
             </p>
@@ -32,7 +32,7 @@ const About = () => {
 
           {/* Right - Skills */}
           <Col lg={6} md={12} className="about-skills-container" data-aos="fade-left">
-            <h3 className="section-heading">Skills & Expertise</h3>
+            <h3 className="about-heading">Skills & Expertise</h3>
             <div className="about-skills">
               <div className="skill-item"><FaReact className="skill-icon react" /> React.js</div>
               <div className="skill-item"><FaJsSquare className="skill-icon js" /> JavaScript</div>

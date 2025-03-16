@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "./Experience.css";
 import demoImg from "../assets/demo.webp"; 
+import google from "../assets/google.png"; 
+import ms from "../assets/ms.png"; 
 
 const experienceData = [
   {
@@ -9,7 +11,7 @@ const experienceData = [
     role: "Software Engineering Intern",
     duration: "June 2024 - Aug 2024",
     description: "Worked on optimizing search algorithms and improving user experience.",
-    logo: demoImg,
+    logo: google,
     link: "https://careers.google.com/",
   },
   {
@@ -17,7 +19,7 @@ const experienceData = [
     role: "Frontend Developer Intern",
     duration: "Jan 2024 - May 2024",
     description: "Developed responsive UI components using React and Bootstrap.",
-    logo: demoImg,
+    logo: ms,
     link: "https://careers.microsoft.com/",
   },
   {
@@ -34,7 +36,9 @@ const Experience = () => {
   return (
     <section id="experience">
       <Container>
-        <h2 className="title">Experience & Internships</h2>
+        <h2 className="title">
+          Experience & Internships
+        </h2>
         <Row className="justify-content-center">
           {experienceData.map((exp, index) => (
             <Col xs={12} sm={6} md={4} key={index} className="experience-card">

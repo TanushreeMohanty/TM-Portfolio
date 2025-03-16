@@ -1,8 +1,7 @@
-.section-heading {
+.about-heading {
   color: #a97155;
 }
 
-/* 🎯 Skills Section */
 .about-skills {
   display: flex;
   flex-wrap: wrap;
@@ -16,8 +15,7 @@
   justify-content: center;
   gap: 8px;
   font-size: 1rem;
-  background: #f4f4f4;
-  color: #333;
+  background: #ffffff18;
   padding: 10px 16px;
   border-radius: 20px;
   font-weight: bold;
@@ -29,7 +27,6 @@
 
 .skill-item:hover {
   transform: scale(1.05);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .skill-icon {
@@ -68,11 +65,7 @@
   }
 
 
-  .about-tagline {
-    font-size: 1.2rem;
-  }
-
-  .section-heading {
+  .about-heading {
     color: #a97155;
     font-size: 1.5rem;
   }

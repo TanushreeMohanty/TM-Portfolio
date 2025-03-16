@@ -35,7 +35,7 @@ const Testimonials = () => {
                 <Card.Img variant="top" src={testimonial.image} className="testimonial-img" />
                 <Card.Body>
                   <Card.Title>{testimonial.name}</Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted">{testimonial.role}</Card.Subtitle>
+                  <Card.Subtitle className="mb-2 text-muted role">{testimonial.role}</Card.Subtitle>
                   <Card.Text>"{testimonial.feedback}"</Card.Text>
                 </Card.Body>
               </Card>

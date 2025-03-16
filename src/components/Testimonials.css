@@ -1,34 +1,28 @@
-
-
-
-/* 🃏 Testimonial Card */
+/* Checked ---------------- */
 .testimonial-card {
-  background: rgba(23, 25, 35, 0.9); /* Glassmorphism Effect */
+  background: rgb(22, 27, 34); /* Glassmorphism Effect */
   border-radius: 15px;
   padding: 30px;
-  border: 1px solid rgba(0, 170, 255, 0.3);
-  box-shadow: 0px 0px 15px rgba(0, 170, 255, 0.5);
+  border: 1px solid rgba(169, 113, 85, 0.3);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   text-align: center;
   backdrop-filter: blur(10px);
   position: relative;
   z-index: 2;
 }
-
 .testimonial-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0px 0px 25px rgba(0, 170, 255, 0.8);
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 20px rgb(139, 94, 59,0.5);
+  border-color: #8b5e3b;
 }
 
-/* 🖼️ Centered Profile Image */
 .testimonial-img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   display: block;
   margin: 0 auto 15px;
-  border: 4px solid #00aaff;
-  box-shadow: 0px 0px 15px rgba(0, 170, 255, 0.6);
+  border: 4px solid #8b5e3b;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -36,7 +30,6 @@
   transform: scale(1.1);
 }
 
-/* 🏆 Name & Role */
 .testimonial-card .card-title {
   font-size: 1.4rem;
   font-weight: bold;
@@ -48,7 +41,6 @@
   margin-bottom: 15px;
 }
 
-/* ✨ Feedback */
 .testimonial-card .card-text {
   font-size: 1.1rem;
   font-style: italic;
@@ -56,7 +48,6 @@
   line-height: 1.6;
 }
 
-/* 📱 Responsive Styles */
 @media (max-width: 992px) {
 
 
