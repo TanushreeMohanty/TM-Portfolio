@@ -1,5 +1,8 @@
 # TM-Portfolio
-
+## Resources:
+### For Contact form:
+- For sending messages on email: https://web3forms.com/platforms/react-contact-form
+- For notification alert whether message sent or error occured: https://sweetalert2.github.io/#usage
 ## Features added
 
 ### **1. Hero Section (Landing Page)**
