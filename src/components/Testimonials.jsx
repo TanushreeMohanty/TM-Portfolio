@@ -21,6 +21,7 @@ const testimonials = [
     feedback: "A problem-solver who brings creativity and efficiency to every project.",
     image: "https://randomuser.me/api/portraits/men/56.jpg",
   },
+  
 ];
 
 const Testimonials = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./Hero.css"; 
-import profileImage from "../assets/tanu.jpg"; 
+import profileImage from "../assets/profile.jpeg"; 
 
 const Hero = () => {
   return (
@@ -22,13 +22,13 @@ const Hero = () => {
             </h1>
             <h2 className="hero-subtitle">Software Developer</h2>
             <p className="hero-bio">
-            Passionate about building scalable web apps, I specialize in crafting seamless user experiences with modern frontend frameworks and robust backend systems. Constantly exploring new tech to turn ideas into reality! 🚀            </p>
+            Passionate about building scalable web apps, I specialize in crafting seamless user experiences with modern frontend frameworks and robust backend systems. Constantly exploring new tech to turn ideas into reality!             </p>
             <div className="hero-buttons">
               <Button href="/Resume Tanushree Mohanty.pdf" target="_blank" className="hero-btn primary-btn">
-                📄 Resume
+                 Resume
               </Button>
               <Button href="#contact" className="hero-btn secondary-btn">
-              ✨ Let's Connect
+              Let's Connect
               </Button>
             </div>
           </Col>

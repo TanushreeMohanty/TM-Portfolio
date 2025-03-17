@@ -1,9 +1,36 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
+:root {
+  --brown-tone: #2E86AB;
+  --beige-tone: #ADD8E6;
+  --dark-gray: #2B3A42;
+  --deep-black: #1A2327;
+  --translucent-white: #ffffff22;
+  --translucent-black: #00000026;
+  --white-color: #ECF8FF;
+  --translucent-brown: #2E86ABE6;
+}
+
+body {
+  font-family: "Cambria";
+}
+
+/* :root {
+  --brown-tone: #A67C52; 
+  --beige-tone: #EAD8C0; 
+  --dark-gray: #333333; 
+  --deep-black: #1A1A1A; 
+  --translucent-white: #ffffff22; 
+  --translucent-black: #00000026; 
+  --white-color: #FFFFFF; 
+  --translucent-brown: #A67C52E6; 
+} */
+
+
 section {
   padding: 80px 5%;
-  background: #1b1b1b; /* Dark Black */
-  color: #e0c9a6; /* Soft Brown */
+  background: var(--deep-black); /* Dark Black */
+  color: var(--beige-tone); /* Soft Brown */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -15,11 +42,11 @@ section {
   font-size: 2.8rem;
   font-weight: bold;
   margin-bottom: 30px;
-  color: #bfa58a;
+  color: var(--beige-tone);
 }
 
 .role {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #a97155;
+  color: var(--brown-tone);
 }

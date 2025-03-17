@@ -18,6 +18,24 @@ const About = () => {
 
         <Row className="about-content">
           {/* Left - Introduction */}
+          <Col lg={6} md={12} className="about-skills-container" data-aos="fade-left">
+            <h3 className="about-heading">Skills</h3>
+            <div className="about-skills">
+              <div className="skill-item"><FaHtml5 className="skill-icon html" /> HTML</div>
+              <div className="skill-item"><FaCss3Alt className="skill-icon css" /> CSS</div>
+              <div className="skill-item"><FaJsSquare className="skill-icon js" /> JavaScript</div>
+              <div className="skill-item"><FaReact className="skill-icon react" /> React.js</div>
+              <div className="skill-item"><FaPython className="skill-icon python" /> Python</div>
+              <div className="skill-item"><SiDjango className="skill-icon django" /> Django</div>
+              <div className="skill-item"><SiApachespark className="skill-icon api" /> API Integration</div>
+              <div className="skill-item"><SiVercel className="skill-icon vercel" /> Vercel</div>
+              <div className="skill-item"><FaGitAlt className="skill-icon git" /> Git</div>
+              <div className="skill-item"><FaGithub className="skill-icon github" /> GitHub</div>
+            </div>
+          </Col>
+
+
+          {/* Right - Skills */}
           <Col lg={6} md={12} className="about-intro" data-aos="fade-right">
             <h3 className="about-heading">Who am I?</h3>
             <p className="about-text">
@@ -32,33 +50,6 @@ const About = () => {
                  B.Tech in Computer Science - SGT University (2022 - 2026)  
                 <span className="education-score">[CGPA: 9.68/10]</span>
               </div>
-
-              <div className="education-item">
-                 Higher Secondary Education - OPG World School (2020 - 2022)  
-                <span className="education-score">[12<sup>th</sup> Boards: 87%]</span>
-              </div>
-
-              <div className="education-item">
-                 Secondary Education - OPG World School (2018 - 2020)  
-                <span className="education-score">[10<sup>th</sup> Boards: 84%]</span>
-              </div>
-            </div>
-          </Col>
-
-          {/* Right - Skills */}
-          <Col lg={6} md={12} className="about-skills-container" data-aos="fade-left">
-            <h3 className="about-heading">Skills & Expertise</h3>
-            <div className="about-skills">
-              <div className="skill-item"><FaHtml5 className="skill-icon html" /> HTML</div>
-              <div className="skill-item"><FaCss3Alt className="skill-icon css" /> CSS</div>
-              <div className="skill-item"><FaJsSquare className="skill-icon js" /> JavaScript</div>
-              <div className="skill-item"><FaReact className="skill-icon react" /> React.js</div>
-              <div className="skill-item"><FaPython className="skill-icon python" /> Python</div>
-              <div className="skill-item"><SiDjango className="skill-icon django" /> Django</div>
-              <div className="skill-item"><SiApachespark className="skill-icon api" /> API Integration</div>
-              <div className="skill-item"><SiVercel className="skill-icon vercel" /> Vercel</div>
-              <div className="skill-item"><FaGitAlt className="skill-icon git" /> Git</div>
-              <div className="skill-item"><FaGithub className="skill-icon github" /> GitHub</div>
             </div>
           </Col>
         </Row>

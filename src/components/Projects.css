@@ -5,24 +5,24 @@
 
 .filter-btn {
   margin: 5px;
-  background: #a97155;
+  background: var(--brown-tone);
   border: none;
-  color: white;
+  color: var(--beige-color);
   padding: 12px 20px;
   font-size: 1rem;
   border-radius: 8px;
   transition: 0.3s ease-in-out;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .filter-btn.active {
-  background: rgb(92, 61, 45);
+  background: var(--beige-tone);
   transform: scale(1.1);
+  color: var(--brown-tone);
 }
 
 .filter-btn:hover {
-  background: rgba(169, 113, 85);
-  color: #fff;
+  background: var(--beige-tone);
+  color: var(--brown-tone);
   transform: scale(1.05);
 }
 
@@ -35,16 +35,16 @@
 
 .project-card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .project-card-inner {
-  background-color: #2b2828;
+  background-color: var(--dark-gray);
   border-radius: 15px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid var(--translucent-white);
 }
 
 .project-card-inner:hover {
@@ -58,7 +58,7 @@
 .project-image-wrapper img {
   width: 100%;
   transition: transform 0.3s ease-in-out;
-  border-bottom: 3px solid #a97155;
+  border-bottom: 3px solid var(--brown-tone);
 }
 
 .project-card-inner:hover .project-image-wrapper img {
@@ -67,13 +67,13 @@
 
 .project-card-inner .card-body {
   padding: 20px;
-  color: #f4f4f4;
+  color: var(--white-color);
 }
 
 .card-title {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #a97155;
+  color: var(--brown-tone);
 }
 
 .card-text {
@@ -97,12 +97,12 @@
 }
 
 .project-links button:first-child {
-  background: #a97155;
+  background: var(--brown-tone);
   border: none;
 }
 
 .project-links button:last-child {
-  background: #333;
+  background: var(--dark-gray);
   border: none;
 }
 

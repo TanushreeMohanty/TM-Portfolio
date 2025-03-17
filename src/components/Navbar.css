@@ -1,9 +1,9 @@
 /* 🔹 Navbar Styling */
 .custom-navbar {
-    background-color: #a97155; /* Light Background */
+    background-color: var(--brown-tone); /* Light Background */
     padding: 10px 0;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--translucent-black);
   }
   
   /* 🔹 Navbar Brand */
@@ -12,7 +12,7 @@
     align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
   }
   
@@ -28,7 +28,7 @@
   .nav-link {
     font-size: 1.1rem;
     font-weight: 500;
-    color: white !important;
+    color: var(--white-color) !important;
     margin-left: 15px;
     transition: color 0.3s ease, transform 0.2s ease;
   }
@@ -36,14 +36,14 @@
   /* 🎨 Hover & Active Effects */
   .nav-link:hover,
   .nav-link:focus {
-    color: #462e23 !important;
+    color: var(--beige-tone) !important;
     transform: scale(1.05);
   }
   
   /* 🔹 Navbar Toggle Button */
 /* 🔹 Navbar Toggle Button */
 .navbar-toggler {
-    border: 2px solid #462e23 !important; /* Blue border */
+    border: 2px solid var(--beige-tone) !important; /* Blue border */
     border-radius: 30%; /* Rounded corners */
     padding: 5px 10px;
     transition: all 0.3s ease-in-out;
@@ -51,14 +51,14 @@
   
   /* 🔹 Toggle Button Hover Effect */
   .navbar-toggler:hover {
-    background-color: #462e23;
-    border-color: #a97155;
+    background-color: var(--beige-tone);
+    border-color: var(--brown-tone);
   }
   
   
   /* 🎨 Active Navbar Link */
   .navbar-nav .nav-link.active {
-    color: #462e23 !important;
+    color: var(--beige-tone) !important;
     font-weight: bold;
   }
   
