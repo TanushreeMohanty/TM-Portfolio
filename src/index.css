@@ -1,6 +1,6 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-:root {
+/* :root {
   --brown-tone: #2E86AB;
   --beige-tone: #ADD8E6;
   --dark-gray: #2B3A42;
@@ -9,13 +9,13 @@
   --translucent-black: #00000026;
   --white-color: #ECF8FF;
   --translucent-brown: #2E86ABE6;
-}
+} */
 
 body {
   font-family: "Cambria";
 }
 
-/* :root {
+:root {
   --brown-tone: #A67C52; 
   --beige-tone: #EAD8C0; 
   --dark-gray: #333333; 
@@ -24,7 +24,7 @@ body {
   --translucent-black: #00000026; 
   --white-color: #FFFFFF; 
   --translucent-brown: #A67C52E6; 
-} */
+}
 
 
 section {

@@ -26,7 +26,7 @@ const CustomNavbar = () => {
               { href: "#projects", label: "Projects" },
               { href: "#experience", label: "Experience" },
               { href: "#achievements", label: "Achievements" },
-              { href: "#testimonials", label: "Testimonials" },
+              // { href: "#testimonials", label: "Testimonials" },
               { href: "#contact", label: "Contact" },
             ].map(({ href, label }) => (
               <Nav.Link

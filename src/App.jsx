@@ -9,7 +9,7 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
-import Testimonials from "./components/Testimonials";
+// import Testimonials from "./components/Testimonials";
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
       <Projects />
       <Experience />
       <Achievements />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
     </ThemeProvider>
   );
