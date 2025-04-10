@@ -20,11 +20,11 @@ const Hero = () => {
             <h1 className="title">
               Hey, I'm <span className="highlight">Tanushree Mohanty</span>
             </h1>
-            <h2 className="hero-subtitle">Software Developer</h2>
+            <h2 className="hero-subtitle">Full Stack Developer</h2>
             <p className="hero-bio">
             Passionate about building scalable web apps, I specialize in crafting seamless user experiences with modern frontend frameworks and robust backend systems. Constantly exploring new tech to turn ideas into reality!             </p>
             <div className="hero-buttons">
-              <Button href="/Resume Tanushree Mohanty.pdf" target="_blank" className="hero-btn primary-btn">
+              <Button href="/Tanushree Mohanty Resume.pdf" target="_blank" className="hero-btn primary-btn">
                  Resume
               </Button>
               <Button href="#contact" className="hero-btn secondary-btn">
