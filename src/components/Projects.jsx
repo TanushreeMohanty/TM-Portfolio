@@ -7,7 +7,7 @@ import p2 from "../assets/weathery.png";
 const projectData = [
   {
     title: "TaskSync",
-    category: "Web Apps",
+    category: "Beginner Level",
     description: "This is a Todo App created using React.js",
     image: p1,
     demoLink: "https://task-sync-app.vercel.app/",
@@ -15,39 +15,16 @@ const projectData = [
   },
   {
     title: "Weathery",
-    category: "Web Apps",
+    category: "Intermediate Level",
     description: "This is a Clean and Responsive Weather Dashboard created using React.js and OpenWeatherMap API.",
     image: p2,
     demoLink: "https://weathery-webapp.vercel.app/",
     githubLink: "https://github.com/TanushreeMohanty/Weathery",
   },
-  {
-    title: "AI Chatbot",
-    category: "AI/ML",
-    description: "A chatbot powered by NLP and machine learning algorithms.",
-    image: demoImg,
-    demoLink: "#",
-    githubLink: "#",
-  },
-  {
-    title: "VR Learning App",
-    category: "AR/VR",
-    description: "An immersive VR learning platform for students.",
-    image: demoImg,
-    demoLink: "#",
-    githubLink: "#",
-  },
-  {
-    title: "Hackathon Project",
-    category: "Hackathon Projects",
-    description: "An innovative solution developed during a 24-hour hackathon.",
-    image: demoImg,
-    demoLink: "#",
-    githubLink: "#",
-  },
+
 ];
 
-const categories = ["All", "Web Apps", "AI/ML", "AR/VR", "Hackathon Projects"];
+const categories = ["All", "Beginner Level", "Intermediate Level", "Advanced Level"];
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");

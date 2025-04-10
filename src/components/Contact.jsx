@@ -139,10 +139,10 @@ const Contact = () => {
           <Col lg={6} md={12} className="contact-info text-center">
             <img src={contactImg} alt="Contact Illustration" className="contact-image" />
             <div className="social-links mt-4">
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/tanushree-mohanty-69353323b/" target="_blank" rel="noopener noreferrer">
                 <img src={linkedinImg} alt="LinkedIn" className="social-image linkedin" />
               </a>
-              <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/TanushreeMohanty" target="_blank" rel="noopener noreferrer">
                 <img src={githubImg} alt="GitHub" className="social-image github" />
               </a>
             </div>
