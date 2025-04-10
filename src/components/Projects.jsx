@@ -5,15 +5,15 @@ import p1 from "../assets/project1.png";
 import p2 from "../assets/weathery.png";
 
 const projectData = [
-  {
-    title: "TaskSync",
-    category: "Beginner Level",
-    description: "A sleek and minimalistic Todo application built with React.js that allows users to efficiently manage daily tasks with a clean and intuitive interface.",
-    image: p1,
-    demoLink: "https://task-sync-app.vercel.app/",
-    githubLink: "https://github.com/TanushreeMohanty/TaskSync.git",
-    techStack: ["React.js"],
-  },
+  // {
+  //   title: "TaskSync",
+  //   category: "Beginner Level",
+  //   description: "A sleek and minimalistic Todo application built with React.js that allows users to efficiently manage daily tasks with a clean and intuitive interface.",
+  //   image: p1,
+  //   demoLink: "https://task-sync-app.vercel.app/",
+  //   githubLink: "https://github.com/TanushreeMohanty/TaskSync.git",
+  //   techStack: ["React.js"],
+  // },
   {
     title: "Weathery",
     category: "Intermediate Level",

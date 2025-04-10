@@ -9,7 +9,7 @@ const experienceData = [
     company: "Indian Aviation Academy",
     role: "Software Development Intern",
     duration: "Feb 2025 - Present",
-    description: "Working on Management System in IT Domain",
+    description: "Working on Contract Management System (CRM) in IT Domain",
     logo: iaa,
     link: "https://www.iaa.edu.in/",
   },
