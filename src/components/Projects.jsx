@@ -3,7 +3,7 @@ import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import "./Projects.css";
 import demoImg from "../assets/demo.webp"; 
 import p1 from "../assets/project1.png"; 
-
+import p2 from "../assets/weathery.png";
 const projectData = [
   {
     title: "TaskSync",
@@ -12,6 +12,14 @@ const projectData = [
     image: p1,
     demoLink: "https://task-sync-app.vercel.app/",
     githubLink: "https://github.com/TanushreeMohanty/TaskSync.git",
+  },
+  {
+    title: "Weathery",
+    category: "Web Apps",
+    description: "This is a Clean and Responsive Weather Dashboard created using React.js and OpenWeatherMap API.",
+    image: p2,
+    demoLink: "https://weathery-webapp.vercel.app/",
+    githubLink: "https://github.com/TanushreeMohanty/Weathery",
   },
   {
     title: "AI Chatbot",
