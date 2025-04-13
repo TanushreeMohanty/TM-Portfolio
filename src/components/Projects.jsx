@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import "./Projects.css";
-import p1 from "../assets/quicklist.png";
+import p1 from "../assets/quicklist1.png";
 import p2 from "../assets/weathery.png";
 
 const projectData = [
