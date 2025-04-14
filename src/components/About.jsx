@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { 
   FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaPython, FaGitAlt, FaGithub 
 } from "react-icons/fa";
-import { SiDjango, SiVercel, SiApachespark } from "react-icons/si";
+import { SiDjango, SiVercel, SiApachespark,SiFirebase} from "react-icons/si";
 import "./About.css";
 
 const About = () => {
