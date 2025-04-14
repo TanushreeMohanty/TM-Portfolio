@@ -28,6 +28,8 @@ const About = () => {
               <div className="skill-item"><FaPython className="skill-icon python" /> Python</div>
               <div className="skill-item"><SiDjango className="skill-icon django" /> Django</div>
               <div className="skill-item"><SiApachespark className="skill-icon api" /> API Integration</div>
+              <div className="skill-item"><SiFirebase className="skill-icon firebase" /> Firebase Auth</div>
+              <div className="skill-item"><SiFirebase className="skill-icon firebase" /> Firestore DB</div>
               <div className="skill-item"><SiVercel className="skill-icon vercel" /> Vercel</div>
               <div className="skill-item"><FaGitAlt className="skill-icon git" /> Git</div>
               <div className="skill-item"><FaGithub className="skill-icon github" /> GitHub</div>
