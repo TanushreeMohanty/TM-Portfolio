@@ -3,7 +3,7 @@ import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import "./Projects.css";
 import p1 from "../assets/quicklist1.png";
 import p2 from "../assets/weathery.png";
-
+import p3 from "../assets/prodsync.png";
 const projectData = [
   {
     title: "QuickList",
@@ -15,6 +15,15 @@ const projectData = [
     techStack: ["React.js"],
   },
   {
+    title: "ProdSync",
+    category: "Intermediate Level",
+    description: "This is a Product Management System created using React + Firebase",
+    image: p3,
+    demoLink: "https://prod-sync.vercel.app/",
+    githubLink: "https://github.com/TanushreeMohanty/ProdSync",
+    techStack: ["React.js", "MUI", "Firebase Auth", "Firestore DB"],
+  },
+  {
     title: "Weathery",
     category: "Intermediate Level",
     description: "A responsive and visually appealing weather dashboard developed using React.js and the OpenWeatherMap API, providing real-time weather updates for any city worldwide.",
@@ -23,6 +32,7 @@ const projectData = [
     githubLink: "https://github.com/TanushreeMohanty/Weathery",
     techStack: ["React.js", "OpenWeatherMap API"],
   },
+  
 ];
 
 
